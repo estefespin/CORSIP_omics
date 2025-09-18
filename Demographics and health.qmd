@@ -1,0 +1,437 @@
+---
+title: "Demographics"
+author: "Estefania Espin"
+format: html
+editor: visual
+---
+
+## CORSIP Cohort
+
+**Analyzing demographic and health-related data**
+
+```{r}
+#| warning: false
+#Importing dataset
+library(readr)
+CORSIP_Full <- read_csv("CORSIP_Full.csv")
+View(CORSIP_Full)
+```
+
+Creating a table summarizing the frequency of symptoms across all Long COVID cases
+
+```{r}
+#| warning: false
+#Plot of LC Symptoms in all LC cases
+
+symptom_labels <- c(
+  "00" = "Fatigue",
+  "01" = "Sore",
+  "02" = "Shortness of breath",
+  "03" = "Brain fog",
+  "04" = "Abdominal pain",
+  "05" = "Menstrual problems",
+  "06" = "Altered smell/taste",
+  "07" = "Anxiety",
+  "08" = "Blurred vision",
+  "09" = "Chest pain",
+  "10" = "Cough",
+  "11" = "Depression",
+  "12" = "Dizziness",
+  "13" = "Fever",
+  "14" = "Diarrhea",
+  "15" = "Constipation",
+  "16" = "Headache",
+  "17" = "Memory impairments",
+  "18" = "Joint pains",
+  "19" = "Muscle pains",
+  "20" = "Nerve pain",
+  "21" = "New allergies",
+  "22" = "Numbness / Paresthesias",
+  "23" = "Post-exertion fatigue",
+  "24" = "Decreased energy to exercise",
+  "25" = "Trouble sleeping",
+  "26" = "Palpitations",
+  "27" = "Ringing in the ears / hearing issues",
+  "28" = "Other"
+)
+
+#Transforming the data
+library(dplyr)
+library(tidyr)
+
+# Filter for LC cases and reshape
+symptom_long <- CORSIP_Full %>%
+  filter(LCStatus == "Case") %>%
+  select(SympAffectf) %>%
+  mutate(RowID = row_number()) %>%
+  separate_rows(SympAffectf, sep = "\\|") %>%
+  mutate(SympAffectf = sprintf("%02d", as.integer(SympAffectf)),
+         Symptom = symptom_labels[SympAffectf])
+
+#Table of Symptoms frequencies
+# Create frequency and percentage table
+symptom_freq <- symptom_long %>%
+  count(Symptom, sort = TRUE) %>%
+  mutate(Percentage = round(100 * n / sum(n), 1))
+
+# View the table
+print(symptom_freq)
+```
+
+Generating a plot to visualize the frequency of symptoms across all Long COVID cases
+
+```{r}
+#| warning: false
+#Ploting the symptom counts
+library(ggplot2)
+
+# Plot
+symptom_long %>%
+  count(Symptom, sort = TRUE) %>%
+  ggplot(aes(x = reorder(Symptom, n), y = n)) +
+  geom_bar(stat = "identity", fill = "#0073C2FF") +
+  coord_flip() +
+  labs(title = "Reported Symptoms Among Long-COVID Cases",
+       x = "Symptom",
+       y = "Number of cases") +
+  theme_minimal()
+```
+
+Analyzing the duration of symptoms across all Long COVID cases
+
+```{r}
+#| warning: false
+#Symptoms Duration mean in all LC cases in Transcriptomics and Metabolomics
+Symptom_duration <- CORSIP_Full %>%
+  filter(LCStatus == "Case")
+hist(Symptom_duration$SympMonthf)
+
+median(Symptom_duration$SympMonthf)
+IQR(Symptom_duration$SympMonthf, na.rm = TRUE)
+quantile(Symptom_duration$SympMonthf, probs = c(0.25, 0.5, 0.75), na.rm = TRUE)
+q <- quantile(Symptom_duration$SympMonthf, probs = c(0.25, 0.75), na.rm = TRUE)
+paste0(q[1], "–", q[2])
+```
+
+**Summary of Demographics and Health Variables for All Participants**
+
+```{r}
+#| warning: false
+
+#Overall Summary
+summary(CORSIP_Full)
+names(CORSIP_Full)
+str(CORSIP_Full)
+
+#Converting Categorical Variables into Factors
+CORSIP_Full <-
+  CORSIP_Full %>%
+  mutate_if(is.character,as.factor)
+
+CORSIP_Full <- 
+  CORSIP_Full %>%
+  mutate_if(is.logical, as.factor)
+
+#Testing Normality with Saphiro-Wilks
+library(tidyverse)
+library(ggpubr)
+library(rstatix)
+
+NormalityCORSIP_Full <-CORSIP_Full %>%
+  shapiro_test(Age,SpikeAb,SpikeAab,SpikeBab, SpikeCab, SpikeDab,
+               SpikeEab)
+view(NormalityCORSIP_Full)
+```
+
+As the dataset is not normally distributed, the Mann–Whitney U test will be used for continuous variables, and Fisher’s exact test for categorical variables.
+
+```{r}
+#| warning: false
+#STATISTICS IN ONE TABLE
+library(finalfit)
+
+CORSIP_Full <- CORSIP_Full %>%
+  dplyr::select("SAMPLE_ID", "ParticipantID", "Group", "LCStatus","CovHave",
+                "Age","SexBirth","Race","Tobacco","Vape", "Vaccinated", "SympMonthf",
+                "Vaccinatedbc", "Doses", "SympAffectf", "Dose1BeforeInfection", "Dose2BeforeInfection",
+                "EverCovHospf", "MonthsSinceInfection1","MonthsSinceInfection2",
+                "MonthsSinceInfection3","MonthsSinceInfection4",
+                "MonthsSinceInfection5","MonthsSinceInfection6",
+                "MonthsSinceInfection2", "MonthsSinceInfection3", "SympMonthf","SympWorstDescf",
+                "DiagChronicMed6","DiagChronicMed12", 
+                "DiagChronicMed18",
+                "DiagHyper","DiagHyper6", "DiagHyper12", "DiagHyper18",
+                "DiagDiabetes", "DiagDiabetes6", "DiagDiabetes18",
+                "DiagAsthma", "DiagAsthma12", "DiagAsthma18",
+                "DiagLung", "DiagLung12",
+                "DiagHeart", "DiagHeart6", "DiagHeart12","DiagKidney12",
+                "DiagLiver", "DiagLiver12",
+                "DiagCancer", "DiagCancer12",
+                "DiagBlood", "DiagBlood6", "DiagBlood12",
+                "DiagImmune", "DiagImmune6", "DiagImmune12", "DiagImmune18",
+                "DiagNeuro", "DiagNeuro12", "Spike","SpikeA","SpikeB", "SpikeC",
+                "SpikeD", "SpikeE", "SpikeF",
+                "SpikeAb","SpikeAab","SpikeBab","SpikeCab", "SpikeDab", "SpikeEab",
+                "SpikeFab",
+                "CBS_Roche_N", "CBS_Roche_NA", "CBS_Roche_NB", "CBS_Roche_NC",
+                "CBS_Roche_ND", "CBS_Roche_NE", "CBS_Roche_NF",
+                "SympCough","SympCough6","SympCough12","SympCough18",
+                "SympFever","SympFever6","SympFever12","SympFever18",
+                "SympShort","SympShort6","SympShort12","SympShort18",
+                "SympMuscles","SympMuscles6","SympMuscles12","SympMuscles18",
+                "SympHead","SympHead6","SympHead12","SympHead18",
+                "SympThroat","SympThroat6","SympThroat12","SympThroat18",
+                "SympDiarrhea","SympDiarrhea6","SympDiarrhea12","SympDiarrhea18",
+                "SympSmell","SympSmell6","SympSmell12","SympSmell18","SympFatigue",
+                "SympFatigue6","SympFatigue12","SympFatigue18","SympEnergy",
+                "SympEnergy6","SympEnergy12","SympEnergy18",
+                "SympChest","SympChest6","SympChest12","SympChest18",
+                "SympAbs","SympAbs6","SympAbs12","SympAbs18",
+                "SympPalpitat","SympPalpitat6","SympPalpitat12","SympPalpitat18",
+                "SympSleep","SympSleep6","SympSleep12","SympSleep18",
+                "SympDizziness","SympDizziness6","SympDizziness12","SympDizziness18",
+                "SympNumb","SympNumb6","SympNumb12","SympNumb18",
+                "SympBrainFog","SympBrainFog6","SympBrainFog12","SympBrainFog18")
+
+str(CORSIP_Full)
+CORSIP_Full$EverCovHospf[is.na(CORSIP_Full$EverCovHospf)] <- "No"
+
+#Selecting the highest value across MonthsSinceInfection to have the number of months since infection to sample collection for Transcriptomics
+CORSIP_Full$MaxMonthsSinceInfection <- pmax(
+  CORSIP_Full$MonthsSinceInfection1,
+  CORSIP_Full$MonthsSinceInfection2,
+  CORSIP_Full$MonthsSinceInfection3,
+  CORSIP_Full$MonthsSinceInfection4,
+  CORSIP_Full$MonthsSinceInfection5,
+  CORSIP_Full$MonthsSinceInfection6,
+  na.rm = TRUE
+)
+
+#Setting up the dependent variable
+dependent <- "LCStatus"
+
+#Setting up all the explanatory (independent) variables
+explanatory <- c("Age","SexBirth","Race","Tobacco","Vape",               
+                 "Dose1BeforeInfection", "Dose2BeforeInfection","EverCovHospf", "DiagChronicMed6", 
+                 "DiagChronicMed18", "MaxMonthsSinceInfection",
+                 "DiagHyper", "DiagDiabetes",
+                 "DiagAsthma", 
+                 "DiagLung", 
+                 "DiagNeuro",
+                 "SpikeAb","SpikeAab","SpikeBab","SpikeCab", "SpikeDab", "SpikeEab",
+                 "SpikeFab",
+                 "CBS_Roche_N", "CBS_Roche_NA", "CBS_Roche_NB", "CBS_Roche_NC",
+                 "CBS_Roche_ND", "CBS_Roche_NE", "CBS_Roche_NF", "SympCough")
+                 
+desc_stats <- CORSIP_Full %>%
+  summary_factorlist(dependent,
+                     explanatory,
+                     cont = "median",
+                     p = TRUE,
+                     p_cat = "fisher",
+                     p_cont_para= wilcox.test)
+print(desc_stats)
+knitr::kable(desc_stats, align=c("l", "l", "r", "r", "r"))
+
+CorsipTable <- desc_stats
+kable_out <- knitr::kable(CorsipTable, "html") %>% kableExtra::kable_styling(bootstrap_options = c("striped", "hover"))
+readr::write_file(kable_out, "StatisticsCORSIP_Full.html")
+```
+
+**Transcriptomics Participant Statistics**
+
+```{r}
+#| warning: false
+#Filtering the individuals of the Nanostring Analysis
+CORSIP_NS <- CORSIP_Full %>%
+  dplyr::filter(ParticipantID %in% c("BC.0003.gEXFUOIN", "BC.0007.omROKY4K", 
+                                     "BC.0009.EyNRfOmG", "BC.0021.xvW65srR", 
+                                     "BC.0037.PDXzjyma", "BC.0053.kR4mspXD", 
+                                     "BC.0106.AlTXUVOP", "BC.0153.HaTgOqUC", 
+                                     "BC.0160.IpB7Zkhz", "BC.0170.0NC1wHA8", 
+                                     "BC.0172.dgceFTCB", "BC.0212.l1iLmiQ0", 
+                                     "BC.0217.Ahk1Kb2x", "BC.0350.kCzku2zO", 
+                                     "BC.0411.qf31Z4KP", "BC.0520.7mNcRmoj", 
+                                     "BC.0695.4mP1PO54", "BC.0709.ivDMYbfx", 
+                                     "BC.0724.XjSnJ51t", "BC.0760.TRhYjjdq", 
+                                     "BC.0918.sH2MxtPX", "BC.1242.zBVBNCeJ", 
+                                     "BC.1511.ALtbwQYg", "BC.1588.y0d1al1U", 
+                                     "BC.1765.uDuvn8Nd", "BC.2060.2XcutO71", 
+                                     "BC.2144.RvWeOeoO", "BC.2295.McMkWWTS", 
+                                     "BC.2361.J1GrOnxa", "BC.2415.FzPsh2Os", 
+                                     "BC.2721.iJNwj4RC", "BC.2750.YerNhpmb", 
+                                     "BC.2974.fXj3jg4Z", "BC.2988.RccREh1l", 
+                                     "BC.3292.r5DLJzx1", "BC.3411.2Wo7DpCR", 
+                                     "BC.3895.snMQvHok"
+  ))
+view(CORSIP_NS)
+```
+
+Symptom Frequency in Long COVID Transcriptomics Participants
+
+```{r}
+#| warning: false
+#Symptoms of Participants in NanoString assay
+# Reshape symptoms per participant and calculate symptom frequencies across individuals
+symptom_long <- CORSIP_NS %>%
+  filter(LCStatus == "Case") %>%
+  select(ParticipantID, SympAffectf) %>%
+  separate_rows(SympAffectf, sep = "\\|") %>%
+  mutate(SympAffectf = sprintf("%02d", as.integer(SympAffectf)),
+         Symptom = symptom_labels[SympAffectf]) %>%
+  distinct(ParticipantID, Symptom)  # Avoid counting duplicate symptoms per participant
+
+# Count how many participants reported each symptom
+symptom_freq <- symptom_long %>%
+  count(Symptom, sort = TRUE) %>%
+  mutate(Percentage = round(100 * n / 8, 1))  # Replace 12 with n_distinct(ParticipantID) if dynamic
+
+# View result
+print(symptom_freq)
+
+```
+
+Symptom Duration in Long COVID Transcriptomics Participants
+
+```{r}
+#| warning: false
+#Symptoms Duration mean in LC cases in Nanostring
+Symptom_duration <- CORSIP_NS %>%
+  filter(LCStatus == "Case")
+hist(Symptom_duration$SympMonthf)
+
+median(Symptom_duration$SympMonthf)
+IQR(Symptom_duration$SympMonthf, na.rm = TRUE)
+quantile(Symptom_duration$SympMonthf, probs = c(0.25, 0.5, 0.75), na.rm = TRUE)
+q <- quantile(Symptom_duration$SympMonthf, probs = c(0.25, 0.75), na.rm = TRUE)
+paste0(q[1], "–", q[2])
+```
+
+**Summary of Demographics and Health Variables for Transcriptomics Participants**
+
+```{r}
+#| warning: false
+#Demographics Summary of Participants in NanoString assay
+
+library(finalfit)
+
+#Setting up the dependent variable
+dependent <- "LCStatus"
+#Setting up all the explanatory (independent) variables
+explanatory <- c("Age","SexBirth","Race","Tobacco","Vape",                 
+                 "Dose1BeforeInfection", "Dose2BeforeInfection","EverCovHospf", "DiagChronicMed6", 
+                 "DiagChronicMed18", "MaxMonthsSinceInfection",
+                 "DiagHyper", "DiagDiabetes",
+                 "DiagAsthma", 
+                 "DiagLung", 
+                 "DiagNeuro",
+                 "SpikeAb","SpikeAab","SpikeBab","SpikeCab", "SpikeDab", "SpikeEab",
+                 "SpikeFab",
+                 "CBS_Roche_N", "CBS_Roche_NA", "CBS_Roche_NB", "CBS_Roche_NC",
+                 "CBS_Roche_ND", "CBS_Roche_NE", "CBS_Roche_NF", "SympCough")
+
+desc_stats <- CORSIP_NS %>%
+  summary_factorlist(dependent,
+                     explanatory,
+                     cont = "median",
+                     p = TRUE,
+                     p_cat = "fisher",
+                     p_cont_para= "wilcox.test")
+print(desc_stats)
+knitr::kable(desc_stats, align=c("l", "l", "r", "r", "r"))
+
+CorsipTable <- desc_stats
+kable_out <- knitr::kable(CorsipTable, "html") %>% kableExtra::kable_styling(bootstrap_options = c("striped", "hover"))
+readr::write_file(kable_out, "StatisticsCORSIP_Transcriptomics.html")
+```
+
+**Metabolomics Participant Statistics**
+
+```{r}
+#| warning: false
+#Filtering the individuals of the Metabolomics Analysis
+CORSIP_metabol <- CORSIP_Full %>%
+  dplyr::filter(ParticipantID %in% c("BC.0095.eLWIVIWM", "BC.1313.mZPOh0O1", 
+                                 "BC.2001.IdHP3dOj", "BC.0888.tIiA2Lej", 
+                                 "BC.1242.zBVBNCeJ", "BC.0008.0SdYOIdW", 
+                                 "BC.2595.BUFMqcHC", "BC.2494.IDdnqkoV", 
+                                 "BC.1109.3dQLxBQg", "BC.2318.TnQXOOln", 
+                                 "BC.2286.nzvQCKr4", "BC.2750.YerNhpmb"
+))
+view(CORSIP_metabol)
+str(CORSIP_metabol)
+```
+
+Symptom Frequency in Long COVID Metabolomics Participants
+
+```{r}
+#| warning: false
+#Symptoms of Participants in Metabolomics assay
+# Filter for LC cases and reshape
+# Reshape symptoms per participant and calculate symptom frequencies across individuals
+symptom_long <- CORSIP_metabol %>%
+  filter(LCStatus == "Case") %>%
+  select(ParticipantID, SympAffectf) %>%
+  separate_rows(SympAffectf, sep = "\\|") %>%
+  mutate(SympAffectf = sprintf("%02d", as.integer(SympAffectf)),
+         Symptom = symptom_labels[SympAffectf]) %>%
+  distinct(ParticipantID, Symptom)  # Avoid counting duplicate symptoms per participant
+
+# Count how many participants reported each symptom
+symptom_freq <- symptom_long %>%
+  count(Symptom, sort = TRUE) %>%
+  mutate(Percentage = round(100 * n / 6, 1))  # Replace 6 with n_distinct(ParticipantID) if dynamic
+
+# View result
+print(symptom_freq)
+```
+
+Symptom Duration in Long COVID Metabolomics Participants
+
+```{r}
+#| warning: false
+Symptom_duration <- CORSIP_metabol %>%
+  filter(LCStatus == "Case")
+hist(Symptom_duration$SympMonthf)
+
+median(Symptom_duration$SympMonthf)
+IQR(Symptom_duration$SympMonthf, na.rm = TRUE)
+quantile(Symptom_duration$SympMonthf, probs = c(0.25, 0.5, 0.75), na.rm = TRUE)
+q <- quantile(Symptom_duration$SympMonthf, probs = c(0.25, 0.75), na.rm = TRUE)
+paste0(q[1], "–", q[2])
+```
+
+**Summary of Demographics for Metabolomics Participants**
+
+```{r}
+#| warning: false
+library(finalfit)
+
+#Setting up the dependent variable
+dependent <- "LCStatus"
+#Setting up all the explanatory (independent) variables
+explanatory <- c("Age","SexBirth","Race","Tobacco","Vape",                 
+                 "EverCovHospf", "DiagChronicMed6", 
+                 "DiagChronicMed18", 
+                 "DiagHyper", "DiagDiabetes",
+                 "DiagAsthma", 
+                 "DiagLung", 
+                 "DiagNeuro",
+                 "SpikeAb","SpikeAab","SpikeBab","SpikeCab", "SpikeDab", "SpikeEab",
+                 "CBS_Roche_N", "CBS_Roche_NA", "CBS_Roche_NB", "CBS_Roche_NC",
+                 "CBS_Roche_ND", "CBS_Roche_NE", "CBS_Roche_NF", "SympCough")
+
+desc_stats_metabol <- CORSIP_metabol %>%
+  summary_factorlist(dependent,
+                     explanatory,
+                     cont = "median",
+                     p = TRUE,
+                     p_cat = "fisher",
+                     p_cont_para= wilcox.test)
+print(desc_stats_metabol)
+knitr::kable(desc_stats_metabol, align=c("l", "l", "r", "r", "r"))
+
+CorsipTable <- desc_stats_metabol
+kable_out <- knitr::kable(CorsipTable, "html") %>% kableExtra::kable_styling(bootstrap_options = c("striped", "hover"))
+readr::write_file(kable_out, "StatisticsCORSIP_metabol.html")
+```

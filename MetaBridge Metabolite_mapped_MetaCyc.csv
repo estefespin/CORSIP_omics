@@ -1,0 +1,198 @@
+Compound,HMDB,KEGG,Reaction,Reaction Name,MetaCyc Gene,Gene Name,Ensembl
+INDOLE_ACETATE_AUXIN,HMDB00197,C00954,RXN-10715,(indol-3-yl)acetaldehyde + NAD+ + H2O  -->  (indol-3-yl)acetate + NADH + 2 H+,HS01061,ALDH3A2,ENSG00000072210
+1-2-DIPALMITOYLPHOSPHATIDYLCHOLINE,HMDB00564,D03585,RXN-15065,"1,2-dipalmitoyl-sn-glycero-3-phosphocholine + H2O  -->  1-palmitoyl-sn-glycero-3-phosphocholine + palmitate + H+",HS11053,PLA/AT3,ENSG00000176485
+1-2-DIPALMITOYLPHOSPHATIDYLCHOLINE,HMDB00564,D03585,RXN-15065,"1,2-dipalmitoyl-sn-glycero-3-phosphocholine + H2O  -->  1-palmitoyl-sn-glycero-3-phosphocholine + palmitate + H+",HS10199,PLA2G1B,ENSG00000170890
+1-2-DIPALMITOYLPHOSPHATIDYLCHOLINE,HMDB00564,D03585,RXN-15065,"1,2-dipalmitoyl-sn-glycero-3-phosphocholine + H2O  -->  1-palmitoyl-sn-glycero-3-phosphocholine + palmitate + H+",HS04039,PLA2G4A,ENSG00000116711
+1-2-DIPALMITOYLPHOSPHATIDYLCHOLINE,HMDB00564,D03585,RXN66-578,"1,2-dipalmitoyl-sn-glycerol + CDP-choline  -->  1,2-dipalmitoyl-sn-glycero-3-phosphocholine + CMP + H+",HS05844,CEPT1,ENSG00000134255
+1-2-DIPALMITOYLPHOSPHATIDYLCHOLINE,HMDB00564,D03585,RXN-15066,"palmitoyl-CoA + 1-palmitoyl-sn-glycero-3-phosphocholine  <-->  1,2-dipalmitoyl-sn-glycero-3-phosphocholine + coenzyme A",HS16664,LPCAT4,ENSG00000176454
+DEOXYURIDINE,HMDB00012,C00526,CYTIDEAM-RXN,2'-deoxycytidine + H+ + H2O  -->  2'-deoxyuridine + ammonium,HS08334,CDA,ENSG00000158825
+DEOXYURIDINE,HMDB00012,C00526,DURIDKI-RXN,2'-deoxyuridine + ATP  -->  dUMP + ADP + H+,HS09657,TK1,ENSG00000167900
+DEOXYURIDINE,HMDB00012,C00526,DURIDKI-RXN,2'-deoxyuridine + ATP  -->  dUMP + ADP + H+,HS09420,TK2,ENSG00000166548
+DEOXYURIDINE,HMDB00012,C00526,URA-PHOSPH-RXN,2'-deoxyuridine + phosphate  <-->  2-deoxy-a-D-ribose 1-phosphate + uracil,HS00442,TYMP,ENSG00000025708
+DEOXYURIDINE,HMDB00012,C00526,URA-PHOSPH-RXN,2'-deoxyuridine + phosphate  <-->  2-deoxy-a-D-ribose 1-phosphate + uracil,HS00053,UPP1,
+GLN,HMDB00641,C00064,CARBPSYN-RXN,2 ATP + L-glutamine + hydrogencarbonate + H2O  -->  L-glutamate + carbamoyl phosphate + 2 ADP + phosphate + 2 H+,HS01483,CAD,
+GLN,HMDB00641,C00064,PRPPAMIDOTRANS-RXN,5-phospho-b-D-ribosylamine + L-glutamate + diphosphate  <-->  5-phospho-a-D-ribose 1-diphosphate + L-glutamine + H2O,HS05157,PPAT,ENSG00000128059
+GLN,HMDB00641,C00064,GLUTAMINESYN-RXN,ammonium + L-glutamate + ATP  -->  L-glutamine + ADP + phosphate + H+,HS06066,GLUL,
+GLN,HMDB00641,C00064,FGAMSYN-RXN,ATP + N2-formyl-N1-(5-phospho-b-D-ribosyl)glycinamide + L-glutamine + H2O  -->  L-glutamate + ADP + 2-(formamido)-N1-(5-phospho-b-D-ribosyl)acetamidine + phosphate + H+,HS11329,PFAS,ENSG00000178921
+GLN,HMDB00641,C00064,NAD-SYNTH-GLN-RXN,ATP + nicotinate adenine dinucleotide + L-glutamine + H2O  -->  L-glutamate + AMP + NAD+ + diphosphate + H+,HS10587,NADSYN1,ENSG00000172890
+GLN,HMDB00641,C00064,CTPSYN-RXN,ATP + UTP + L-glutamine + H2O  -->  ADP + CTP + L-glutamate + phosphate + 2 H+,HS10382,CTPS1,
+GLN,HMDB00641,C00064,CTPSYN-RXN,ATP + UTP + L-glutamine + H2O  -->  ADP + CTP + L-glutamate + phosphate + 2 H+,HS00585,CTPS2,
+GLN,HMDB00641,C00064,L-GLN-FRUCT-6-P-AMINOTRANS-RXN,L-glutamine + b-D-fructofuranose 6-phosphate  <-->  L-glutamate + D-glucosamine 6-phosphate,HS09974,GFPT1,
+GLN,HMDB00641,C00064,GLUTAMIN-RXN,L-glutamine + H2O  -->  L-glutamate + ammonia + H+,HS01483,CAD,
+GLN,HMDB00641,C00064,GLUTAMIN-RXN,L-glutamine + H2O  -->  L-glutamate + ammonia + H+,HS10382,CTPS1,
+GLN,HMDB00641,C00064,GLUTAMIN-RXN,L-glutamine + H2O  -->  L-glutamate + ammonia + H+,HS00585,CTPS2,
+GLN,HMDB00641,C00064,GLUTAMIN-RXN,L-glutamine + H2O  -->  L-glutamate + ammonia + H+,HS03886,GLS,
+GLN,HMDB00641,C00064,TRANS-RXN66-1231,L-glutamine[out] + L-arginine[in]  -->  L-glutamine[in] + L-arginine[out],HS09679,SLC3A2,ENSG00000168003
+GLN,HMDB00641,C00064,TRANS-RXN66-1231,L-glutamine[out] + L-arginine[in]  -->  L-glutamine[in] + L-arginine[out],HS02450,SLC7A6,ENSG00000103064
+3-UREIDO-PROPIONATE,HMDB00026,C02642,BETA-UREIDOPROPIONASE-RXN,3-ureidopropanoate + H2O + 2 H+  -->  b-alanine + ammonium + CO2,HS01953,UPB1,ENSG00000100024
+3-UREIDO-PROPIONATE,HMDB00026,C02642,DIHYDROPYRIMIDINASE-RXN,"5,6-dihydrouracil + H2O  <-->  3-ureidopropanoate + H+",HS07460,DPYS,ENSG00000147647
+TRP,HMDB00929,C00078,TRYPTOPHAN-5-MONOOXYGENASE-RXN,"L-tryptophan + 5,6,7,8-tetrahydrobiopterin + dioxygen  -->  5-hydroxy-L-tryptophan + a 4a-hydroxytetrahydrobiopterin",HS05250,TPH1,ENSG00000129167
+TRP,HMDB00929,C00078,TRYPTOPHAN-5-MONOOXYGENASE-RXN,"L-tryptophan + 5,6,7,8-tetrahydrobiopterin + dioxygen  -->  5-hydroxy-L-tryptophan + a 4a-hydroxytetrahydrobiopterin",HS06603,TPH2,ENSG00000139287
+TRP,HMDB00929,C00078,RXN-8665,L-tryptophan + dioxygen  -->  N-formyl-L-kynurenine,HS05502,IDO1,
+TRP,HMDB00929,C00078,RXN-8665,L-tryptophan + dioxygen  -->  N-formyl-L-kynurenine,HS07771,TDO2,
+TRP,HMDB00929,C00078,AROMATIC-L-AMINO-ACID-DECARBOXYLASE-RXN,L-tryptophan + H+  -->  tryptamine + CO2,HS05635,DDC,ENSG00000132437
+TRP,HMDB00929,C00078,RXN66-449,L-tryptophan[out]  -->  L-tryptophan[in],HS09679,SLC3A2,ENSG00000168003
+TRP,HMDB00929,C00078,RXN66-449,L-tryptophan[out]  -->  L-tryptophan[in],HS02481,SLC7A5,ENSG00000103257
+TRP,HMDB00929,C00078,RXN66-449,L-tryptophan[out]  -->  L-tryptophan[in],HS01756,SLC7A8,ENSG00000092068
+HYPOXANTHINE,HMDB00157,C00262,DEOXYINOPHOSPHOR-RXN,2'-deoxyinosine + phosphate  <-->  hypoxanthine + 2-deoxy-a-D-ribose 1-phosphate,HS02151,PNP,
+HYPOXANTHINE,HMDB00157,C00262,RXN-7682,hypoxanthine + NAD+ + H2O  -->  xanthine + NADH + H+,HS08270,XDH,
+HYPOXANTHINE,HMDB00157,C00262,HYPOXANPRIBOSYLTRAN-RXN,IMP + diphosphate  <--  hypoxanthine + 5-phospho-a-D-ribose 1-diphosphate,HS09275,HPRT1,
+HYPOXANTHINE,HMDB00157,C00262,INOPHOSPHOR-RXN,inosine + phosphate  <-->  hypoxanthine + a-D-ribose-1-phosphate,HS02151,PNP,
+THR,HMDB00167,C00188,RXN-15122,L-threonine  -->  (Z)-2-aminobutenoate + H2O,HS05952,SDS,ENSG00000135094
+THR,HMDB00167,C00188,RXN-15122,L-threonine  -->  (Z)-2-aminobutenoate + H2O,HS06616,SDSL,ENSG00000139410
+THR,HMDB00167,C00188,THREDEHYD-RXN,L-threonine  -->  2-oxobutanoate + ammonium,HS05952,SDS,ENSG00000135094
+THR,HMDB00167,C00188,THREDEHYD-RXN,L-threonine  -->  2-oxobutanoate + ammonium,HS06616,SDSL,ENSG00000139410
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-2901,b-alanine + 2-oxoglutarate  <-->  3-oxopropanoate + L-glutamate,HS02477,ABAT,ENSG00000183044
+2-KETOGLUTARATE,HMDB00208,C00026,1.14.11.1-RXN,g-butyrobetaine + 2-oxoglutarate + dioxygen  -->  L-carnitine + succinate + CO2,HS05246,BBOX1,ENSG00000129151
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-14932,(R)-2-hydroxyglutarate + an oxidized electron carrier  -->  2-oxoglutarate + a reduced two electron carrier,HS11546,D2HGDH,ENSG00000180902
+2-KETOGLUTARATE,HMDB00208,C00026,2.6.1.22-RXN,(S)-3-amino-2-methylpropanoate + 2-oxoglutarate  <-->  (S)-methylmalonate-semialdehyde + L-glutamate,HS02477,ABAT,ENSG00000183044
+2-KETOGLUTARATE,HMDB00208,C00026,2OXOGLUTDECARB-RXN,2-oxoglutarate + a [2-oxoglutarate dehydrogenase E2 protein] N6-lipoyl-L-lysine + H+  -->  a [2-oxoglutarate dehydrogenase E2 protein] N6-S-succinyldihydrolipoyl-L-lysine + CO2,HS01727,DLD,ENSG00000091140
+2-KETOGLUTARATE,HMDB00208,C00026,2OXOGLUTDECARB-RXN,2-oxoglutarate + a [2-oxoglutarate dehydrogenase E2 protein] N6-lipoyl-L-lysine + H+  -->  a [2-oxoglutarate dehydrogenase E2 protein] N6-S-succinyldihydrolipoyl-L-lysine + CO2,HS04324,DLST,ENSG00000119689
+2-KETOGLUTARATE,HMDB00208,C00026,2OXOGLUTDECARB-RXN,2-oxoglutarate + a [2-oxoglutarate dehydrogenase E2 protein] N6-lipoyl-L-lysine + H+  -->  a [2-oxoglutarate dehydrogenase E2 protein] N6-S-succinyldihydrolipoyl-L-lysine + CO2,HS02832,OGDH,ENSG00000105953
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-22839,2-oxoglutarate + a [protein]-L-histidine + dioxygen  -->  a [protein]-(3S)-3-hydroxy-L-histidine + CO2 + succinate,HS15881,RIOX1,ENSG00000170468
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-22839,2-oxoglutarate + a [protein]-L-histidine + dioxygen  -->  a [protein]-(3S)-3-hydroxy-L-histidine + CO2 + succinate,HS15922,RIOX2,ENSG00000170854
+2-KETOGLUTARATE,HMDB00208,C00026,2OXOGLUTARATEDEH-RXN,2-oxoglutarate + coenzyme A + NAD+  -->  succinyl-CoA + CO2 + NADH,HS01727,DLD,ENSG00000091140
+2-KETOGLUTARATE,HMDB00208,C00026,2OXOGLUTARATEDEH-RXN,2-oxoglutarate + coenzyme A + NAD+  -->  succinyl-CoA + CO2 + NADH,HS04324,DLST,ENSG00000119689
+2-KETOGLUTARATE,HMDB00208,C00026,2OXOGLUTARATEDEH-RXN,2-oxoglutarate + coenzyme A + NAD+  -->  succinyl-CoA + CO2 + NADH,HS02832,OGDH,ENSG00000105953
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-18697,2-oxoglutaryl-CoA + glutarate  <-->  2-oxoglutarate + glutaryl-CoA,HS10959,SUGCT,ENSG00000175600
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-10721,"3-hydroxy-L-kynurenine + 2-oxoglutarate  <-->  4-(2-amino-3-hydroxyphenyl)-2,4-dioxobutanoate + L-glutamate",HS03239,AADAT,ENSG00000109576
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-10721,"3-hydroxy-L-kynurenine + 2-oxoglutarate  <-->  4-(2-amino-3-hydroxyphenyl)-2,4-dioxobutanoate + L-glutamate",HS06422,CCBL2,ENSG00000137944
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-21859,3-hydroxy-L-kynurenine + 2-oxoglutarate  -->  xanthurenate + L-glutamate + H2O,HS03239,AADAT,ENSG00000109576
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-21859,3-hydroxy-L-kynurenine + 2-oxoglutarate  -->  xanthurenate + L-glutamate + H2O,HS06422,CCBL2,ENSG00000137944
+2-KETOGLUTARATE,HMDB00208,C00026,GABATRANSAM-RXN,4-aminobutanoate + 2-oxoglutarate  <-->  succinate semialdehyde + L-glutamate,HS02477,ABAT,ENSG00000183044
+2-KETOGLUTARATE,HMDB00208,C00026,PSERTRANSAMPYR-RXN,4-phosphooxy-L-threonine + 2-oxoglutarate  <-->  (3R)-3-hydroxy-2-oxo-4 phosphooxybutanoate + L-glutamate,HS05946,PSAT1,ENSG00000135069
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-14538,7-[(3S)-(3-amino-3-carboxypropyl)]-wyosine37 in tRNAPhe + 2-oxoglutarate + dioxygen  -->  7-(2-hydroxy-3-amino-3-carboxypropyl)-wyosine37 in tRNAPhe + succinate + CO2,HS14995,TYW5,ENSG00000162971
+2-KETOGLUTARATE,HMDB00208,C00026,4-HYDROXYGLUTAMATE-AMINOTRANSFERASE-RXN,erythro-4-hydroxy-L-glutamate + 2-oxoglutarate  <-->  (4R)-4-hydroxy-2-oxoglutarate + L-glutamate,HS04858,GOT2,ENSG00000125166
+2-KETOGLUTARATE,HMDB00208,C00026,TRIMETHYLLYSINE-DIOXYGENASE-RXN,"N6,N6,N6-trimethyl-L-lysine + 2-oxoglutarate + dioxygen  -->  3-hydroxy-N6,N6,N6-trimethyl-L-lysine + succinate + CO2",HS08089,TMLHE,
+2-KETOGLUTARATE,HMDB00208,C00026,PSERTRANSAM-RXN,O-phospho-L-serine + 2-oxoglutarate  <-->  L-glutamate + 3-phosphooxypyruvate,HS05946,PSAT1,ENSG00000135069
+2-KETOGLUTARATE,HMDB00208,C00026,RXN66-470,"a 3-methyl-branched 2,3,4-saturated fatty acyl-CoA + 2-oxoglutarate + dioxygen  -->  a 2-hydroxy-3-methyl-branched 2,3,4-saturated fatty acyl-CoA + succinate + CO2",HS03003,PHYH,ENSG00000107537
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-23270,a 5-formylcytosine in DNA + 2-oxoglutarate + dioxygen  -->  a 5-carboxycytosine in DNA + succinate + CO2 + H+,HS06487,TET1,ENSG00000138336
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-23269,a 5-hydroxymethylcytosine in DNA + 2-oxoglutarate + dioxygen  -->  a 5-formylcytosine in DNA + succinate + CO2 + H2O,HS06487,TET1,ENSG00000138336
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-23268,a 5-methylcytosine in DNA + 2-oxoglutarate + dioxygen  -->  a 5-hydroxymethylcytosine in DNA + succinate + CO2,HS06487,TET1,ENSG00000138336
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20640,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-27 + 2 2-oxoglutarate + 2 dioxygen  -->  a [histone H3] N6-methyl-L-lysine-27 + 2 formaldehyde + 2 succinate + 2 CO2",HS07385,KDM6A,ENSG00000147050
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20640,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-27 + 2 2-oxoglutarate + 2 dioxygen  -->  a [histone H3] N6-methyl-L-lysine-27 + 2 formaldehyde + 2 succinate + 2 CO2",HS13431,KDM6B,ENSG00000132510
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20624,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-27 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6,N6-dimethyl-L-lysine-27 + formaldehyde + succinate + CO2",HS07385,KDM6A,ENSG00000147050
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20624,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-27 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6,N6-dimethyl-L-lysine-27 + formaldehyde + succinate + CO2",HS13431,KDM6B,ENSG00000132510
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20643,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-36 + 2 2-oxoglutarate + 2 dioxygen  -->  a [histone H3] N6-methyl-L-lysine-36 + 2 formaldehyde + 2 succinate + 2 CO2",HS00868,KDM4A,ENSG00000066135
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20643,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-36 + 2 2-oxoglutarate + 2 dioxygen  -->  a [histone H3] N6-methyl-L-lysine-36 + 2 formaldehyde + 2 succinate + 2 CO2",HS05123,KDM4B,ENSG00000127663
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20643,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-36 + 2 2-oxoglutarate + 2 dioxygen  -->  a [histone H3] N6-methyl-L-lysine-36 + 2 formaldehyde + 2 succinate + 2 CO2",HS02969,KDM4C,ENSG00000107077
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20643,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-36 + 2 2-oxoglutarate + 2 dioxygen  -->  a [histone H3] N6-methyl-L-lysine-36 + 2 formaldehyde + 2 succinate + 2 CO2",HS15881,RIOX1,ENSG00000170468
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20625,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-36 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6,N6-dimethyl-L-lysine-36 + formaldehyde + succinate + CO2",HS00868,KDM4A,ENSG00000066135
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20625,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-36 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6,N6-dimethyl-L-lysine-36 + formaldehyde + succinate + CO2",HS05123,KDM4B,ENSG00000127663
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20625,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-36 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6,N6-dimethyl-L-lysine-36 + formaldehyde + succinate + CO2",HS02969,KDM4C,ENSG00000107077
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20625,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-36 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6,N6-dimethyl-L-lysine-36 + formaldehyde + succinate + CO2",HS15881,RIOX1,ENSG00000170468
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20622,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-N6,N6-dimethyl-L-lysine-4 + formaldehyde + succinate + CO2",HS01631,KDM2B,ENSG00000089094
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20622,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-N6,N6-dimethyl-L-lysine-4 + formaldehyde + succinate + CO2",HS01108,KDM5A,ENSG00000073614
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20622,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-N6,N6-dimethyl-L-lysine-4 + formaldehyde + succinate + CO2",HS04097,KDM5B,ENSG00000117139
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20622,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-N6,N6-dimethyl-L-lysine-4 + formaldehyde + succinate + CO2",HS04990,KDM5C,ENSG00000126012
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20622,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-N6,N6-dimethyl-L-lysine-4 + formaldehyde + succinate + CO2",HS00337,KDM5D,ENSG00000012817
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20622,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-N6,N6-dimethyl-L-lysine-4 + formaldehyde + succinate + CO2",HS15881,RIOX1,ENSG00000170468
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20594,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-4 + 3 2-oxoglutarate + 3 dioxygen  -->  a [histone H3]-L-lysine-4 + 3 succinate + 3 formaldehyde + 3 CO2",HS01108,KDM5A,ENSG00000073614
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20594,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-4 + 3 2-oxoglutarate + 3 dioxygen  -->  a [histone H3]-L-lysine-4 + 3 succinate + 3 formaldehyde + 3 CO2",HS04097,KDM5B,ENSG00000117139
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20594,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-4 + 3 2-oxoglutarate + 3 dioxygen  -->  a [histone H3]-L-lysine-4 + 3 succinate + 3 formaldehyde + 3 CO2",HS04990,KDM5C,ENSG00000126012
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20594,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-4 + 3 2-oxoglutarate + 3 dioxygen  -->  a [histone H3]-L-lysine-4 + 3 succinate + 3 formaldehyde + 3 CO2",HS00337,KDM5D,ENSG00000012817
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20594,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-4 + 3 2-oxoglutarate + 3 dioxygen  -->  a [histone H3]-L-lysine-4 + 3 succinate + 3 formaldehyde + 3 CO2",HS15881,RIOX1,ENSG00000170468
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20642,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-9 + 2 2-oxoglutarate + 2 dioxygen  -->  a [histone H3] N6-methyl-L-lysine-9 + 2 formaldehyde + 2 succinate + 2 CO2",HS00868,KDM4A,ENSG00000066135
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20642,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-9 + 2 2-oxoglutarate + 2 dioxygen  -->  a [histone H3] N6-methyl-L-lysine-9 + 2 formaldehyde + 2 succinate + 2 CO2",HS05123,KDM4B,ENSG00000127663
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20642,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-9 + 2 2-oxoglutarate + 2 dioxygen  -->  a [histone H3] N6-methyl-L-lysine-9 + 2 formaldehyde + 2 succinate + 2 CO2",HS02969,KDM4C,ENSG00000107077
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20623,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6,N6-dimethyl-L-lysine-9 + formaldehyde + succinate + CO2",HS00868,KDM4A,ENSG00000066135
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20623,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6,N6-dimethyl-L-lysine-9 + formaldehyde + succinate + CO2",HS05123,KDM4B,ENSG00000127663
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20623,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6,N6-dimethyl-L-lysine-9 + formaldehyde + succinate + CO2",HS02969,KDM4C,ENSG00000107077
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20623,"a [histone H3] N6,N6,N6-trimethyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6,N6-dimethyl-L-lysine-9 + formaldehyde + succinate + CO2",HS15922,RIOX2,ENSG00000170854
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20630,"a [histone H3] N6,N6-dimethyl-L-lysine-27 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-27 + formaldehyde + succinate + CO2",HS07385,KDM6A,ENSG00000147050
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20630,"a [histone H3] N6,N6-dimethyl-L-lysine-27 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-27 + formaldehyde + succinate + CO2",HS13431,KDM6B,ENSG00000132510
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-13186,"a [histone H3] N6,N6-dimethyl-L-lysine-36 + 2 2-oxoglutarate + 2 dioxygen  -->  a [histone H3]-L-lysine-36 + 2 succinate + 2 formaldehyde + 2 CO2",HS10620,KDM2A,ENSG00000173120
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-13186,"a [histone H3] N6,N6-dimethyl-L-lysine-36 + 2 2-oxoglutarate + 2 dioxygen  -->  a [histone H3]-L-lysine-36 + 2 succinate + 2 formaldehyde + 2 CO2",HS01631,KDM2B,ENSG00000089094
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20631,"a [histone H3] N6,N6-dimethyl-L-lysine-36 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-36 + formaldehyde + succinate + CO2",HS10620,KDM2A,ENSG00000173120
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20631,"a [histone H3] N6,N6-dimethyl-L-lysine-36 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-36 + formaldehyde + succinate + CO2",HS01631,KDM2B,ENSG00000089094
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20631,"a [histone H3] N6,N6-dimethyl-L-lysine-36 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-36 + formaldehyde + succinate + CO2",HS00868,KDM4A,ENSG00000066135
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20631,"a [histone H3] N6,N6-dimethyl-L-lysine-36 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-36 + formaldehyde + succinate + CO2",HS05123,KDM4B,ENSG00000127663
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20631,"a [histone H3] N6,N6-dimethyl-L-lysine-36 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-36 + formaldehyde + succinate + CO2",HS02969,KDM4C,ENSG00000107077
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20631,"a [histone H3] N6,N6-dimethyl-L-lysine-36 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-36 + formaldehyde + succinate + CO2",HS15881,RIOX1,ENSG00000170468
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20641,"a [histone H3] N6,N6-dimethyl-L-lysine-9 + 2 2-oxoglutarate + 2 dioxygen  -->  a [histone H3]-L-lysine-9 + 2 formaldehyde + 2 succinate + 2 CO2",HS09764,HR,ENSG00000168453
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20641,"a [histone H3] N6,N6-dimethyl-L-lysine-9 + 2 2-oxoglutarate + 2 dioxygen  -->  a [histone H3]-L-lysine-9 + 2 formaldehyde + 2 succinate + 2 CO2",HS12848,KDM3A,ENSG00000115548
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20641,"a [histone H3] N6,N6-dimethyl-L-lysine-9 + 2 2-oxoglutarate + 2 dioxygen  -->  a [histone H3]-L-lysine-9 + 2 formaldehyde + 2 succinate + 2 CO2",HS13003,KDM3B,ENSG00000120733
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20629,"a [histone H3] N6,N6-dimethyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-9 + formaldehyde + succinate + CO2",HS09764,HR,ENSG00000168453
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20629,"a [histone H3] N6,N6-dimethyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-9 + formaldehyde + succinate + CO2",HS12848,KDM3A,ENSG00000115548
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20629,"a [histone H3] N6,N6-dimethyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-9 + formaldehyde + succinate + CO2",HS13003,KDM3B,ENSG00000120733
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20629,"a [histone H3] N6,N6-dimethyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-9 + formaldehyde + succinate + CO2",HS00868,KDM4A,ENSG00000066135
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20629,"a [histone H3] N6,N6-dimethyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-9 + formaldehyde + succinate + CO2",HS05123,KDM4B,ENSG00000127663
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20629,"a [histone H3] N6,N6-dimethyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-9 + formaldehyde + succinate + CO2",HS02969,KDM4C,ENSG00000107077
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20629,"a [histone H3] N6,N6-dimethyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3] N6-methyl-L-lysine-9 + formaldehyde + succinate + CO2",HS10597,KDM7B,ENSG00000172943
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20637,a [histone H3] N6-methyl-L-lysine-36 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-L-lysine-36 + formaldehyde + succinate + CO2,HS10620,KDM2A,ENSG00000173120
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20637,a [histone H3] N6-methyl-L-lysine-36 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-L-lysine-36 + formaldehyde + succinate + CO2,HS01631,KDM2B,ENSG00000089094
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20635,a [histone H3] N6-methyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-L-lysine-9 + formaldehyde + succinate + CO2,HS09764,HR,ENSG00000168453
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20635,a [histone H3] N6-methyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-L-lysine-9 + formaldehyde + succinate + CO2,HS12848,KDM3A,ENSG00000115548
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20635,a [histone H3] N6-methyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-L-lysine-9 + formaldehyde + succinate + CO2,HS13003,KDM3B,ENSG00000120733
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20635,a [histone H3] N6-methyl-L-lysine-9 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-L-lysine-9 + formaldehyde + succinate + CO2,HS10597,KDM7B,ENSG00000172943
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20628,"a [histone H3]-N6,N6-dimethyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-N6-methyl-L-lysine-4 + formaldehyde + succinate + CO2",HS01108,KDM5A,ENSG00000073614
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20628,"a [histone H3]-N6,N6-dimethyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-N6-methyl-L-lysine-4 + formaldehyde + succinate + CO2",HS04097,KDM5B,ENSG00000117139
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20628,"a [histone H3]-N6,N6-dimethyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-N6-methyl-L-lysine-4 + formaldehyde + succinate + CO2",HS04990,KDM5C,ENSG00000126012
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20628,"a [histone H3]-N6,N6-dimethyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-N6-methyl-L-lysine-4 + formaldehyde + succinate + CO2",HS00337,KDM5D,ENSG00000012817
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20628,"a [histone H3]-N6,N6-dimethyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-N6-methyl-L-lysine-4 + formaldehyde + succinate + CO2",HS15881,RIOX1,ENSG00000170468
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20634,a [histone H3]-N6-methyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-L-lysine-4 + formaldehyde + succinate + CO2,HS01108,KDM5A,ENSG00000073614
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20634,a [histone H3]-N6-methyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-L-lysine-4 + formaldehyde + succinate + CO2,HS04097,KDM5B,ENSG00000117139
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20634,a [histone H3]-N6-methyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-L-lysine-4 + formaldehyde + succinate + CO2,HS04990,KDM5C,ENSG00000126012
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20634,a [histone H3]-N6-methyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-L-lysine-4 + formaldehyde + succinate + CO2,HS00337,KDM5D,ENSG00000012817
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20634,a [histone H3]-N6-methyl-L-lysine-4 + 2-oxoglutarate + dioxygen  -->  a [histone H3]-L-lysine-4 + formaldehyde + succinate + CO2,HS15881,RIOX1,ENSG00000170468
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20639,a [histone H4] N6-methyl-L-lysine-20 + 2-oxoglutarate + dioxygen  -->  a [histone H4]-L-lysine-20 + formaldehyde + succinate + CO2,HS10597,KDM7B,ENSG00000172943
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-11321,a [hypoxia inducible factor (HIF) a subunit]-L-asparagine + 2-oxoglutarate + dioxygen  -->  a [hypoxia inducible factor (HIF) a subunit]-(3S)-hydroxy-L-asparagine + succinate + CO2,HS15407,HIF1AN,
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-11320,a [hypoxia inducible factor (HIF) a subunit]-L-proline + 2-oxoglutarate + dioxygen  -->  a [hypoxia inducible factor (HIF) a subunit]-trans 4-hyroxy-L-proline + succinate + CO2,HS10346,EGLN2,
+2-KETOGLUTARATE,HMDB00208,C00026,PROCOLLAGEN-LYSINE-5-DIOXYGENASE-RXN,a [procollagen]-L-lysine + 2-oxoglutarate + dioxygen  -->  a [procollagen]-(5R)-5-hydroxy-L-lysine + CO2 + succinate,HS01440,PLOD1,ENSG00000083444
+2-KETOGLUTARATE,HMDB00208,C00026,1.14.11.2-RXN,a [procollagen]-L-proline + 2-oxoglutarate + dioxygen  -->  a [procollagen] trans 4-hyroxy-L-proline + succinate + CO2,HS04613,P4HA1,ENSG00000122884
+2-KETOGLUTARATE,HMDB00208,C00026,1.14.11.2-RXN,a [procollagen]-L-proline + 2-oxoglutarate + dioxygen  -->  a [procollagen] trans 4-hyroxy-L-proline + succinate + CO2,HS06845,P4HB,
+2-KETOGLUTARATE,HMDB00208,C00026,PROCOLLAGEN-PROLINE-3-DIOXYGENASE-RXN,a [procollagen]-L-proline + 2-oxoglutarate + dioxygen  -->  a [procollagen]-trans-3-hydroxy-L-proline + succinate + CO2,HS10094,CRTAP,ENSG00000170275
+2-KETOGLUTARATE,HMDB00208,C00026,PROCOLLAGEN-PROLINE-3-DIOXYGENASE-RXN,a [procollagen]-L-proline + 2-oxoglutarate + dioxygen  -->  a [procollagen]-trans-3-hydroxy-L-proline + succinate + CO2,HS04122,P3H1,ENSG00000117385
+2-KETOGLUTARATE,HMDB00208,C00026,PROCOLLAGEN-PROLINE-3-DIOXYGENASE-RXN,a [procollagen]-L-proline + 2-oxoglutarate + dioxygen  -->  a [procollagen]-trans-3-hydroxy-L-proline + succinate + CO2,HS09452,PPIB,ENSG00000166794
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20595,"a [protein]-No,N'o-dimethyl-L-arginine + 2 2-oxoglutarate + 2 dioxygen  -->  a [protein]-L-arginine + 2 succinate + 2 CO2 + 2 formaldehyde",HS12848,KDM3A,ENSG00000115548
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20595,"a [protein]-No,N'o-dimethyl-L-arginine + 2 2-oxoglutarate + 2 dioxygen  -->  a [protein]-L-arginine + 2 succinate + 2 CO2 + 2 formaldehyde",HS00868,KDM4A,ENSG00000066135
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20595,"a [protein]-No,N'o-dimethyl-L-arginine + 2 2-oxoglutarate + 2 dioxygen  -->  a [protein]-L-arginine + 2 succinate + 2 CO2 + 2 formaldehyde",HS04990,KDM5C,ENSG00000126012
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20591,"a [protein]-No,N'o-dimethyl-L-arginine + 2-oxoglutarate + dioxygen  -->  a [protein]-No-methyl-L-arginine + succinate + CO2 + formaldehyde",HS12848,KDM3A,ENSG00000115548
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20591,"a [protein]-No,N'o-dimethyl-L-arginine + 2-oxoglutarate + dioxygen  -->  a [protein]-No-methyl-L-arginine + succinate + CO2 + formaldehyde",HS00868,KDM4A,ENSG00000066135
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20591,"a [protein]-No,N'o-dimethyl-L-arginine + 2-oxoglutarate + dioxygen  -->  a [protein]-No-methyl-L-arginine + succinate + CO2 + formaldehyde",HS04990,KDM5C,ENSG00000126012
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20597,"a [protein]-No,No-dimethyl-L-arginine + 2 2-oxoglutarate + 2 dioxygen  -->  a [protein]-L-arginine + 2 succinate + 2 CO2 + 2 formaldehyde",HS12848,KDM3A,ENSG00000115548
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20597,"a [protein]-No,No-dimethyl-L-arginine + 2 2-oxoglutarate + 2 dioxygen  -->  a [protein]-L-arginine + 2 succinate + 2 CO2 + 2 formaldehyde",HS00868,KDM4A,ENSG00000066135
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20597,"a [protein]-No,No-dimethyl-L-arginine + 2 2-oxoglutarate + 2 dioxygen  -->  a [protein]-L-arginine + 2 succinate + 2 CO2 + 2 formaldehyde",HS04990,KDM5C,ENSG00000126012
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20597,"a [protein]-No,No-dimethyl-L-arginine + 2 2-oxoglutarate + 2 dioxygen  -->  a [protein]-L-arginine + 2 succinate + 2 CO2 + 2 formaldehyde",HS13431,KDM6B,ENSG00000132510
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20593,"a [protein]-No,No-dimethyl-L-arginine + 2-oxoglutarate + dioxygen  -->  a [protein]-No-methyl-L-arginine + succinate + CO2 + formaldehyde",HS12848,KDM3A,ENSG00000115548
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20593,"a [protein]-No,No-dimethyl-L-arginine + 2-oxoglutarate + dioxygen  -->  a [protein]-No-methyl-L-arginine + succinate + CO2 + formaldehyde",HS00868,KDM4A,ENSG00000066135
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20593,"a [protein]-No,No-dimethyl-L-arginine + 2-oxoglutarate + dioxygen  -->  a [protein]-No-methyl-L-arginine + succinate + CO2 + formaldehyde",HS04990,KDM5C,ENSG00000126012
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20593,"a [protein]-No,No-dimethyl-L-arginine + 2-oxoglutarate + dioxygen  -->  a [protein]-No-methyl-L-arginine + succinate + CO2 + formaldehyde",HS13431,KDM6B,ENSG00000132510
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20592,a [protein]-No-methyl-L-arginine + 2-oxoglutarate + dioxygen  -->  a [protein]-L-arginine + succinate + CO2 + formaldehyde,HS12848,KDM3A,ENSG00000115548
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20592,a [protein]-No-methyl-L-arginine + 2-oxoglutarate + dioxygen  -->  a [protein]-L-arginine + succinate + CO2 + formaldehyde,HS00868,KDM4A,ENSG00000066135
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20592,a [protein]-No-methyl-L-arginine + 2-oxoglutarate + dioxygen  -->  a [protein]-L-arginine + succinate + CO2 + formaldehyde,HS04990,KDM5C,ENSG00000126012
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20592,a [protein]-No-methyl-L-arginine + 2-oxoglutarate + dioxygen  -->  a [protein]-L-arginine + succinate + CO2 + formaldehyde,HS13431,KDM6B,ENSG00000132510
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-20590,a [protein]-L-arginine + 2-oxoglutarate + dioxygen  -->  a [protein]-(3R)-3-hydroxy-L-arginine + succinate + CO2,HS14578,JMJD5,ENSG00000155666
+2-KETOGLUTARATE,HMDB00208,C00026,ISOCITRATE-DEHYDROGENASE-NAD+-RXN,D-threo-isocitrate + NAD+  -->  2-oxoglutarate + CO2 + NADH,HS09394,IDH3A,ENSG00000166411
+2-KETOGLUTARATE,HMDB00208,C00026,ISOCITRATE-DEHYDROGENASE-NAD+-RXN,D-threo-isocitrate + NAD+  -->  2-oxoglutarate + CO2 + NADH,HS02254,IDH3B,ENSG00000101365
+2-KETOGLUTARATE,HMDB00208,C00026,ISOCITRATE-DEHYDROGENASE-NAD+-RXN,D-threo-isocitrate + NAD+  -->  2-oxoglutarate + CO2 + NADH,HS00919,IDH3G,ENSG00000067829
+2-KETOGLUTARATE,HMDB00208,C00026,ISOCITDEH-RXN,D-threo-isocitrate + NADP+  <-->  2-oxoglutarate + CO2 + NADPH,HS06502,IDH1,
+2-KETOGLUTARATE,HMDB00208,C00026,ISOCITDEH-RXN,D-threo-isocitrate + NADP+  <-->  2-oxoglutarate + CO2 + NADPH,HS00021,IDH2,
+2-KETOGLUTARATE,HMDB00208,C00026,D-GLUTAMATE-OXIDASE-RXN,D-glutamate + H2O + dioxygen  -->  ammonium + 2-oxoglutarate + hydrogen peroxide,HS03351,DAO,
+2-KETOGLUTARATE,HMDB00208,C00026,2-AMINOADIPATE-AMINOTRANSFERASE-RXN,L-2-aminoadipate + 2-oxoglutarate  <-->  2-oxoadipate + L-glutamate,HS03239,AADAT,ENSG00000109576
+2-KETOGLUTARATE,HMDB00208,C00026,ALANINE-AMINOTRANSFERASE-RXN,L-alanine + 2-oxoglutarate  <-->  pyruvate + L-glutamate,HS09610,GPT,ENSG00000167701
+2-KETOGLUTARATE,HMDB00208,C00026,ALANINE-AMINOTRANSFERASE-RXN,L-alanine + 2-oxoglutarate  <-->  pyruvate + L-glutamate,HS09332,GPT2,ENSG00000166123
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-13697,L-aspartate + 2-oxoglutarate  <-->  oxaloacetate + L-glutamate,HS04858,GOT2,ENSG00000125166
+2-KETOGLUTARATE,HMDB00208,C00026,CYSTEINE-AMINOTRANSFERASE-RXN,L-cysteine + 2-oxoglutarate  <-->  2-oxo-3-sulfanylpropanoate + L-glutamate,HS13073,CISD1,ENSG00000122873
+2-KETOGLUTARATE,HMDB00208,C00026,GLUTAMATE-DEHYDROGENASE-NADP+-RXN,L-glutamate + NAD(P)+ + H2O  <-->  2-oxoglutarate + ammonium + NAD(P)H + H+,HS07548,GLUD1,ENSG00000148672
+2-KETOGLUTARATE,HMDB00208,C00026,GLUTAMATE-DEHYDROGENASE-NADP+-RXN,L-glutamate + NAD(P)+ + H2O  <-->  2-oxoglutarate + ammonium + NAD(P)H + H+,HS00018,GLUD2,
+2-KETOGLUTARATE,HMDB00208,C00026,GLUTAMATE-DEHYDROGENASE-RXN,L-glutamate + NAD+ + H2O  <-->  2-oxoglutarate + ammonium + NADH + H+,HS07548,GLUD1,ENSG00000148672
+2-KETOGLUTARATE,HMDB00208,C00026,GLUTAMATE-DEHYDROGENASE-RXN,L-glutamate + NAD+ + H2O  <-->  2-oxoglutarate + ammonium + NADH + H+,HS00018,GLUD2,
+2-KETOGLUTARATE,HMDB00208,C00026,GLUTDEHYD-RXN,L-glutamate + NADP+ + H2O  <-->  ammonium + 2-oxoglutarate + NADPH + H+,HS07548,GLUD1,ENSG00000148672
+2-KETOGLUTARATE,HMDB00208,C00026,GLUTDEHYD-RXN,L-glutamate + NADP+ + H2O  <-->  ammonium + 2-oxoglutarate + NADPH + H+,HS00018,GLUD2,
+2-KETOGLUTARATE,HMDB00208,C00026,2.6.1.7-RXN,"L-kynurenine + 2-oxoglutarate  <-->  L-glutamate + 4-(2-aminophenyl)-2,4-dioxobutanoate",HS03239,AADAT,ENSG00000109576
+2-KETOGLUTARATE,HMDB00208,C00026,2.6.1.7-RXN,"L-kynurenine + 2-oxoglutarate  <-->  L-glutamate + 4-(2-aminophenyl)-2,4-dioxobutanoate",HS06422,CCBL2,ENSG00000137944
+2-KETOGLUTARATE,HMDB00208,C00026,2.6.1.7-RXN,"L-kynurenine + 2-oxoglutarate  <-->  L-glutamate + 4-(2-aminophenyl)-2,4-dioxobutanoate",HS04858,GOT2,ENSG00000125166
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-21858,L-kynurenine + 2-oxoglutarate  -->  kynurenate + L-glutamate + H2O + H+,HS03239,AADAT,ENSG00000109576
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-21858,L-kynurenine + 2-oxoglutarate  -->  kynurenate + L-glutamate + H2O + H+,HS06422,CCBL2,ENSG00000137944
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-21858,L-kynurenine + 2-oxoglutarate  -->  kynurenate + L-glutamate + H2O + H+,HS04858,GOT2,ENSG00000125166
+2-KETOGLUTARATE,HMDB00208,C00026,ORNITHINE-GLU-AMINOTRANSFERASE-RXN,L-ornithine + 2-oxoglutarate  <-->  L-glutamate + L-glutamate-5-semialdehyde,HS00832,OAT,ENSG00000065154
+2-KETOGLUTARATE,HMDB00208,C00026,1.5.1.8-RXN,L-saccharopine + NADP+ + H2O  <--  L-lysine + 2-oxoglutarate + NADPH + H+,HS00244,AASS,ENSG00000008311
+2-KETOGLUTARATE,HMDB00208,C00026,TYROSINE-AMINOTRANSFERASE-RXN,L-tyrosine + 2-oxoglutarate  <-->  3-(4-hydroxyphenyl)pyruvate + L-glutamate,HS06761,TAT,
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-8642,oxalosuccinate + H+  <-->  2-oxoglutarate + CO2,HS06502,IDH1,
+2-KETOGLUTARATE,HMDB00208,C00026,RXN-8642,oxalosuccinate + H+  <-->  2-oxoglutarate + CO2,HS00021,IDH2,
+2-KETOGLUTARATE,HMDB00208,C00026,1.14.11.18-RXN,phytanoyl-CoA + 2-oxoglutarate + dioxygen  -->  2-hydroxyphytanoyl-CoA + succinate + CO2,HS03003,PHYH,ENSG00000107537
+ASN,HMDB00168,C00152,ASPARAGHYD-RXN,L-asparagine + H2O  -->  L-aspartate + ammonium,HS15413,ASPG,ENSG00000166183
+ASN,HMDB00168,C00152,ASPARAGHYD-RXN,L-asparagine + H2O  -->  L-aspartate + ammonium,HS08648,ASRGL1,ENSG00000162174
+2K-ADIPATE,HMDB00225,C00322,2-KETO-ADIPATE-DEHYDROG-RXN,2-oxoadipate + coenzyme A + NAD+  -->  CO2 + glutaryl-CoA + NADH,HS11585,DHTKD1,ENSG00000181192
+2K-ADIPATE,HMDB00225,C00322,2-AMINOADIPATE-AMINOTRANSFERASE-RXN,L-2-aminoadipate + 2-oxoglutarate  <-->  2-oxoadipate + L-glutamate,HS03239,AADAT,ENSG00000109576
