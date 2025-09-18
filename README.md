@@ -30,8 +30,6 @@ limma analysis for differential metabolite abundance, volcano plot, PCA, PERMANO
 
 **Pre-Analysis of Metabolomics**
 
-Located in the Metabolomics_initial_data folder
-
 The untargeted metabolomics analysis was conducted using the following mass spectrometry techniques:
 
 * Reversed-Phase Mass Spectrometry (RP-MS): Primarily used for the analysis of non-polar and moderately polar metabolites.
